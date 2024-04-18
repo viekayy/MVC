@@ -16,7 +16,7 @@ class ImageController extends GetxController {
 
   fetchImages() async {
     final response = await http.get(Uri.parse(
-        "https://pixabay.com/api/?key=43460937-afb85a94ff75e567da6c27dc5&q=black+magic&image_type=photo"));
+        "https://pixabay.com/api/?key=43460937-afb85a94ff75e567da6c27dc5&q=couple&image_type=photo"));
     if (response.statusCode == 200) {
       // Parse the JSON string into a Map
       Map<String, dynamic> responseData = jsonDecode(response.body);

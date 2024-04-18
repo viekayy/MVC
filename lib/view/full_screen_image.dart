@@ -11,7 +11,7 @@ class FullScreen extends StatelessWidget {
     return Scaffold(
 
       body: Container(
-        height: Get.height * 0.9,
+        height: Get.height,
         width: Get.width,
         child: Image.network(
           imageUrl,
